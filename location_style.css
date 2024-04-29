@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --color-begie: #d5966c;
+  --color-dark: #151515;
+  --color-gray: #444444;
+  --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-container {
+  width: 1440px;
+  height: 1392px;
+  position: relative;
+}
+
+.main-map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  width: 1440px;
+  height: 600px;
+}
+.location-btn {
+  position: absolute;
+  top: 32px;
+  left: 285px;
+}
+
+.location-btn-content {
+  width: 260px;
+  height: 72px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  font-size: 20px;
+  font-weight: bolder;
+  letter-spacing: 3.64px;
+  position: absolute;
+  top: 55%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    to left,
+    #151515 0%,
+    #151515 80%,
+    #d5966c 0%,
+    #d5966c 20%
+  );
+  z-index: 1;
+}
+
+.location-btn-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to left,
+    #d5966c 0%,
+    #d5966c 80%,
+    #151515 0%,
+    #151515 20%
+  );
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+  opacity: 0;
+}
+
+.location-btn-content:hover:after {
+  opacity: 1;
+}
+
+.location-btn-a {
+  text-decoration: none;
+  color: var(--color-white);
+  margin-right: 20px;
+}
+
+.arrow-left {
+  width: 8px;
+  height: 24px;
+  margin-right: 45px;
+}
+
+.location-btn-a,
+.arrow-left {
+  z-index: 3;
+}
+
+.location-mid-bg {
+  width: 1440px;
+  height: 548px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.location-text {
+  width: 1110px;
+  height: 316px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-h2 {
+  font-size: 70px;
+  font-weight: 900;
+  font-family: "Big Shoulders Display";
+  line-height: 70px;
+  text-transform: uppercase;
+}
+.location-h2-1 {
+  display: block;
+}
+
+.location-text-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-h3 {
+  color: var(--color-begie);
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display";
+  font-size: 36px;
+}
+
+.adress {
+  font-family: "Outfit";
+  font-size: 22px;
+  line-height: 32px;
+  padding-top: 30px;
+  width: 445px;
+  height: 96px;
+}
+
+.adress-1 {
+  display: block;
+}
+.adress-2 {
+  display: block;
+}
+
+.location-text-p {
+  width: 540px;
+  height: 128px;
+  font-family: "Outfit";
+  font-size: 22px;
+  line-height: 32px;
+  padding-top: 50px;
+}
+
+.locatin-footer {
+  background-color: var(--color-begie);
+  color: var(--color-dark);
+  width: 1440px;
+  height: 244px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locatin-footer-content {
+  width: 1110px;
+  height: 84px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.locatin-footer-h3 {
+  font-size: 36px;
+  font-family: "Big Shoulders Display";
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.locatin-h3-footer-1 {
+  display: block;
+  line-height: 36px;
+}
+
+.locatin-p-footer {
+  width: 430px;
+  height: 84px;
+  font-family: "Outfit";
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.locatin-icons-footer {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+svg {
+  fill: var(--color-dark);
+}
+
+svg:hover path {
+  fill: var(--color-white);
+  transition: all ease 0.3s;
+}
+
+svg path {
+  transition: all ease 0.3s;
+}
+
+.locatin-facebook {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.locatin-instagram {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.locatin-twitter {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
